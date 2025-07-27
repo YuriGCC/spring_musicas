@@ -40,29 +40,4 @@ POST /musicas - Cadastra nova música
 GET /artistas - Lista todos os artistas
 GET /albuns - Lista todos os álbuns
 ```
-
-📂 Estrutura do Projeto
-src/
-├── main/
-│   ├── java/com/yuri/musicas/
-│   │   ├── controller/
-│   │   │   ├── AlbumController.java
-│   │   │   ├── ArtistaController.java
-│   │   │   └── MusicaController.java
-│   │   ├── model/
-│   │   │   ├── Album.java
-│   │   │   ├── Artista.java
-│   │   │   └── Musica.java
-│   │   ├── repository/
-│   │   │   ├── AlbumRepository.java
-│   │   │   ├── ArtistaRepository.java
-│   │   │   └── MusicaRepository.java
-│   │   └── MusicasApplication.java
-│   └── resources/
-│       ├── application.properties
-│       └── data.sql
-├── test/
-│   └── java/com/yuri/musicas/
-pom.xml
-
 Projeto desenvolvido para fins educacionais demonstrando o uso de Spring Boot para APIs REST.
