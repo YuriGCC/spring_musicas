@@ -42,17 +42,27 @@ GET /albuns - Lista todos os álbuns
 ```
 
 📂 Estrutura do Projeto
-spring_musicas/
-├── src/
-│   ├── main/java/com/yuri/musicas
-│   │   ├── model/          # Entidades (Musica, Artista, Album)
-│   │   ├── repository/     # Repositórios JPA
-│   │   ├── controller/     # Controladores REST
-│   │   └── MusicasApplication.java # Classe principal
+src/
+├── main/
+│   ├── java/com/yuri/musicas/
+│   │   ├── controller/
+│   │   │   ├── AlbumController.java
+│   │   │   ├── ArtistaController.java
+│   │   │   └── MusicaController.java
+│   │   ├── model/
+│   │   │   ├── Album.java
+│   │   │   ├── Artista.java
+│   │   │   └── Musica.java
+│   │   ├── repository/
+│   │   │   ├── AlbumRepository.java
+│   │   │   ├── ArtistaRepository.java
+│   │   │   └── MusicaRepository.java
+│   │   └── MusicasApplication.java
 │   └── resources/
-│       ├── application.properties # Configurações
-│       └── data.sql        # Dados iniciais (opcional)
-├── pom.xml                 # Dependências Maven
-└── README.md
+│       ├── application.properties
+│       └── data.sql
+├── test/
+│   └── java/com/yuri/musicas/
+pom.xml
 
 Projeto desenvolvido para fins educacionais demonstrando o uso de Spring Boot para APIs REST.
